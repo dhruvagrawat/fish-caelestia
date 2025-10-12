@@ -97,3 +97,5 @@ end
 ##==> Development Tools
 #####################################
 pyenv init - | source
+
+fish_add_path /home/anto/.spicetify
