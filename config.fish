@@ -82,6 +82,7 @@ if status is-interactive
     # Starship prompt
     starship init fish | source
 
+<<<<<<< Updated upstream
     # Direnv + Zoxide
     command -v direnv &> /dev/null && direnv hook fish | source
     command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
@@ -113,9 +114,12 @@ if status is-interactive
     abbr lla 'ls -la'
 
     # Custom colours
-    #cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
+    cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
 
     # For jumping between prompts in foot terminal
+=======
+    # Jump between prompts in foot/kitty
+>>>>>>> Stashed changes
     function mark_prompt_start --on-event fish_prompt
         echo -en "\e]133;A\e\\"
     end
@@ -130,5 +134,3 @@ end
 ##==> Development Tools
 #####################################
 pyenv init - | source
-
-fish_add_path /home/anto/.spicetify
